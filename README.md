@@ -1,4 +1,16 @@
-# Django-Portfolio
+<div align="center">
+<h1>Django Portfolio Project</h1>
+
+> Still in Development
+
+[View Project online](https://django-portfolio-project-dsx1.onrender.com/)
+
+</div>
+
+</br>
+
+<details>
+<summary>Project Deployment Guide</summary>
 
 ## Project deployment:
 
@@ -46,3 +58,15 @@
 - Set Build command `pip install -r requirements.txt`
 - Set start command `gunicorn portfolio.wsgi:application` # here portfolio is the project name
 - Choose Instance Type `Free` and start deploy.
+
+</details>
+
+<details>
+<summary>Features</summary>
+
+## Features
+- Currently user can add or modify frontend data from admin page
+    - Navigate to [Admin Site](https://django-portfolio-project-dsx1.onrender.com/admin/)
+    - `username: aatansen` ; `password: 123`
+
+</details>
