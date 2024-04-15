@@ -1,0 +1,52 @@
+{% load static %}
+    <!-- ======= Resume Section ======= -->
+    <section id="resume" class="resume">
+        <div class="container">
+  
+          <div class="section-title">
+            <h2>Resume</h2>
+            <p>{{resume.Resume_para}}</p>
+          </div>
+  
+          <div class="row">
+            <div class="col-lg-6" data-aos="fade-up">
+              <h3 class="resume-title">Sumary</h3>
+              <div class="resume-item pb-0">
+                <h4>{{resume.Name}}</h4>
+                <p><em>{{resume.About}}</em></p>
+                <ul>
+                  <li>{{resume.Address}}</li>
+                  <li>{{resume.Mobile}}</li>
+                  <li>{{resume.Email}}</li>
+                </ul>
+              </div>
+  
+              <h3 class="resume-title">Education</h3>
+              
+              {% for i in resume_edu %}
+              <div class="resume-item">
+                <h4>{{i.Education_name}}</h4>
+                <h5>{{i.Education_year}}</h5>
+                <p><em>{{i.Education_institute}}</em></p>
+                <p>{{i.Education_details}}</p>
+              </div>
+              {% endfor %}
+            </div>
+            <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
+              <h3 class="resume-title">Professional Experience</h3>
+              
+              {% for i in resume_pro %}
+              <div class="resume-item">
+                <h4>{{i.Professional_experience}}</h4>
+                <h5>{{i.Professional_experience_year}}</h5>
+                <p><em>{{i.Professional_experience_location}}</em></p>
+                <ul>
+                  <li>{{i.Professional_responsibilities}}</li>
+                </ul>
+              </div>
+              {% endfor %}
+            </div>
+          </div>
+  
+        </div>
+      </section><!-- End Resume Section -->
