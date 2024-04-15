@@ -7,4 +7,4 @@ from portfolio.views import portfolio
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('',portfolio,name='portfolio'),
-] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
+] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT) + static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
